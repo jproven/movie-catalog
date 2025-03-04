@@ -52,30 +52,26 @@ To integrate this project into a new Angular environment, follow these steps:
 
 1️⃣ Create a new Angular project (Ensure you have Angular CLI installed)
 
-ng new cineDB-project
-cd cineDB-project
+  `ng new cineDB-project`
+  `cd cineDB-project`
 
 (Make sure you are using Angular v16 for compatibility.)
 
 2️⃣ Copy and paste the provided project folders into the newly created Angular project. Overwrite existing files where necessary:
 
-src/app/
+- public
 
-src/assets/
-
-src/environments/
-
-src/styles.css
+- src
 
 3️⃣ Install required dependencies
 
-npm install
+  `npm install`
 
 4️⃣ Run the application
 
-ng serve
+  `ng serve`
 
-Then open http://localhost:4200 in your browser.
+  Then open `http://localhost:4200` in your browser.
 
 📜 License
 
