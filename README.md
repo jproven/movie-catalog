@@ -1,10 +1,10 @@
 # Movie Catalog
 
-🎬 Movie Collection Management Application
+## 🎬 Movie Collection Management Application
 
 CineDB is a web application that enables users to search for movies, add them to a personal collection, and view detailed information about them. Developed using Angular and styled with Bootstrap, this project provides an intuitive and responsive interface for efficient movie management.
 
-🚀 Features
+## 🚀 Features
 
 ✅ Movie Search: Look up movies using an external API.
 
@@ -20,7 +20,7 @@ CineDB is a web application that enables users to search for movies, add them to
 
 ✅ Persistent Data: Saves user preferences using Local Storage.
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - Angular: framework for building scalable front-end applications.
 
@@ -32,7 +32,7 @@ CineDB is a web application that enables users to search for movies, add them to
 
 - External Movie API: fetches real-time movie data.
 
-⚡ Technical Challenges
+## ⚡ Technical Challenges
 
 - API Integration: efficient data fetching with HTTPClient and observables.
 
@@ -46,7 +46,7 @@ CineDB is a web application that enables users to search for movies, add them to
 
 - Local Storage Handling: persistent data management for user collections.
 
-🔧 Implementation Steps
+## 🔧 Implementation Steps
 
 To integrate this project into a new Angular environment, follow these steps:
 
@@ -73,7 +73,7 @@ To integrate this project into a new Angular environment, follow these steps:
 
     Then open `http://localhost:4200` in your browser.
 
-📜 License
+## 📜 License
 
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See the LICENSE file for full details.
 
