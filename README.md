@@ -46,6 +46,37 @@ CineDB is a web application that enables users to search for movies, add them to
 
 - Local Storage Handling: persistent data management for user collections.
 
+🔧 Implementation Steps
+
+To integrate this project into a new Angular environment, follow these steps:
+
+1️⃣ Create a new Angular project (Ensure you have Angular CLI installed)
+
+ng new cineDB-project
+cd cineDB-project
+
+(Make sure you are using Angular v16 for compatibility.)
+
+2️⃣ Copy and paste the provided project folders into the newly created Angular project. Overwrite existing files where necessary:
+
+src/app/
+
+src/assets/
+
+src/environments/
+
+src/styles.css
+
+3️⃣ Install required dependencies
+
+npm install
+
+4️⃣ Run the application
+
+ng serve
+
+Then open http://localhost:4200 in your browser.
+
 📜 License
 
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See the LICENSE file for full details.
