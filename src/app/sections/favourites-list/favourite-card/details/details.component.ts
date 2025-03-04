@@ -18,22 +18,8 @@ export class DetailsComponent {
               private DataService: DataService, 
               private route: ActivatedRoute) { }
 
-  getMovieById(id: number) {
-    this.ApiService.getMovieById(id).subscribe((json) => {
-      let movieJSON: any = json;
-      console.log(movieJSON);
-    });
-  }
-
   getFavouriteById(id: string) {
     return this.DataService.getFavouriteMovies().find(x => x.imdbID == id)
-  }
-
-  getMovieByName(name: string) {
-    this.ApiService.getMovieByName(name).subscribe((json) => {
-      let movieJSON: any = json;
-      console.log(movieJSON);
-    });
   }
 
   invertDetails() {
