@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <button class="btn btn-danger ms-auto" (click)="clearFavourites()">
+      Vaciar lista
+    </button>
+  </div>
+
+  <div>
+    @for (movie of getFavouriteMovies(); track $index) {
+    <app-favourite-card [movie]="movie"></app-favourite-card>
+    }
+  </div>
+</div>

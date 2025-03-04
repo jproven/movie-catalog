@@ -1,0 +1,26 @@
+<div
+  class="card text-center bg-light mb-2 mr-2"
+  style="max-width: 600px; margin: auto"
+>
+  <a>
+    <img
+      src="{{ movie.Poster }}"
+      class="card-img-top img-fluid"
+      style="
+        max-height: 400px;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+        background-color: #f8f9fa;
+      "
+    />
+  </a>
+  <div class="card-body">
+    <p class="card-text">
+      <strong>Título:</strong> {{ movie.Title }} ({{ movie.Year }})
+    </p>
+    <button type="button" class="btn btn-primary" routerLink="/favouritesDetails/{{movie.imdbID}}">Detalles</button>
+    <button type="button" class="btn btn-danger" (click)="deleteFromFavourites(movie)">Borrar</button>
+  </div>
+</div>
+

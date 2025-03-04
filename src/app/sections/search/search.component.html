@@ -1,0 +1,21 @@
+<div class="input-group mb-3">
+  <input type="text" #searchBox (keyup.enter)="getMovie(searchBox.value)" class="form-control"
+    placeholder="Buscar película..." aria-label="Buscar">
+  <button class="btn btn-primary" (click)="getMovie(searchBox.value)" type="button">Buscar</button>
+</div>
+
+<!-- Mostrar la película si existe -->
+@for (movie of movies; track $index) {
+<div class="card mt-4 mx-auto" style="max-width: 400px;">
+  <img [src]="movie.Poster" class="card-img-top img-fluid" alt="{{ movie.Title }}"
+    style="height: 500px; object-fit: cover;">
+  <div class="card-body text-center">
+    <h5 class="card-title">{{ movie.Title }}</h5>
+    <p class="card-text">{{ movie.Year }}</p>
+    <!-- Botón para agregar a favoritos -->
+    <button class="btn btn-warning mt-2" (click)="addToFavorites(movie)">
+      ⭐ Añadir a favoritos
+    </button>
+  </div>
+</div>
+}

@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-7">
+    <dl>
+      <dt>Título</dt>
+      <dd>{{movie.Title}}</dd>
+    </dl>
+    <dl>
+      <dt>Año</dt>
+      <dd>{{movie.Year}}</dd>
+    </dl>
+    <dl>
+      <dt>Duración</dt>
+      <dd>{{movie.Runtime}}</dd>
+    </dl>
+    <dl>
+      <dt>Géneros</dt>
+      <dd>{{movie.Genre}}</dd>
+    </dl>
+    <dl>
+      <dt>Dirección</dt>
+      <dd>{{movie.Director}}</dd>
+    </dl>
+    <dl>
+      <dt>Reparto</dt>
+      <dd>{{movie.Actors}}</dd>
+    </dl>
+    <dl>
+      <dt>Sinopsis</dt>
+      <dd>{{movie.Plot}}</dd>
+    </dl>
+    <dl>
+      <dt>País</dt>
+      <dd>{{movie.Country}}</dd>
+    </dl>
+    <dl>
+      <dt>Enlace a IMDB</dt>
+      <dd>
+        <a [href]="'https://www.imdb.com/title/' + movie.imdbID" target="_blank" rel="noopener noreferrer">
+          Ver en IMDb
+        </a>
+      </dd>
+    </dl>
+    <dl>
+      @if (movie?.Ratings?.length) {
+        <strong>Puntuación de IMDb:</strong>
+        <ul>
+          @for (rating of movie.Ratings; track rating.Source) {
+            <li>
+              {{ rating.Source }}: {{ rating.Value | ratingStars}}
+            </li>
+          }
+        </ul>
+      }
+
+    </dl>
+
+    <p>
+      <button type="button" routerLink="/favouritesList" class="btn btn-primary">Volver a Favoritos</button>
+    </p>
+  </div>
+  <div class="col-5">
+    <img src="{{movie.Poster}}" class="card-img-top" />
+  </div>
+</div>
